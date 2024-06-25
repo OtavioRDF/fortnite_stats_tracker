@@ -1,0 +1,24 @@
+<div class="new-player-form">
+    <form  
+        [formGroup]="newPlayerForm" 
+        (ngSubmit)="submit()" 
+        action="submit"
+        >
+        <label for="epic-id">Epic id:</label>
+        <input type="text" formControlName="accountId" id="epic-id" name="epic-id" placeholder="6616616161616161a">
+        
+        <label for="user-name">User name:</label>
+        <input type="text" formControlName="userName" id="user-name" name="user-name" placeholder="John">
+
+        <label for="plataform">Plataform:</label>
+        <input type="text" formControlName="accountType" id="plataform" name="plataform" placeholder="epic">
+
+        <label for="time-window">Time Window:</label>
+        <input type="text" formControlName="timeWindow" id="time-window" name="time-window" placeholder="season">
+        
+        <label for="pad">Pad:</label>
+        <input type="text" formControlName="image" id="pad" name="pad" placeholder="keyboardMouse">
+
+        <app-button [text]="'SUBMIT'"/>
+    </form>
+</div>

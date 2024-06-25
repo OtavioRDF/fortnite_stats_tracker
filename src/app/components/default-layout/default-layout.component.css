@@ -1,4 +1,28 @@
 main{
     width: 100vw;
     height: 100vh;
+
+    display: flex;
+    justify-content: center;
+
+    margin: 100px 0 0 0;
+}
+
+.table{
+    width: 1000px;
+    max-height: 800px;
+    background: rgba(40, 40, 40, 0.8);
+
+    color: white;
+
+    font-weight: lighter;
+}
+
+.table-h{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px;
+
+    color: white;
 }

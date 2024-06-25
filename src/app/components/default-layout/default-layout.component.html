@@ -2,7 +2,21 @@
 
 <main>
     <section>
-        <h3>Players</h3>
-        <table></table>
+        <div class="table-h">
+            <h3>Players</h3>
+            <app-button 
+                [text]="'Add new player'"
+                (click)="redirectToPage()"
+            />
+        </div>
+        <table class="table">
+            <tr>
+                <th>Username</th>
+                <th>Epic id</th>
+                <th>Plataform</th>
+                <th>Lifetime</th>
+                <th>Pad</th>
+            </tr>
+        </table>
     </section>
 </main>
